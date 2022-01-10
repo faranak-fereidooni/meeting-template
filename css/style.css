@@ -37,6 +37,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   line-height: 1.7;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1,
@@ -59,9 +61,6 @@ h4 {
 }
 h6 {
   font-weight: 500;
-}
-p {
-  margin-top: 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -192,3 +191,61 @@ a {
   margin-top: 14px;
 }
 /* ********************************************** */
+/* Top-header */
+
+.top-header {
+  background-color: #1f272b;
+  display: block;
+  padding: 0 4.5rem;
+  position: relative;
+  width: 100%;
+  z-index: 1111;
+  text-align: center;
+}
+.top-header__list {
+  margin: 0;
+  width: auto;
+  padding-inline-start: 0%;
+}
+.top-header__item {
+  display: inline-block;
+  list-style: none;
+  line-height: 2.3;
+}
+.top-header__item .fa {
+  color: #fff;
+  margin-left: 1.8rem;
+  font-size: 0.9em;
+}
+.top-header__content {
+  color: #fff;
+  font-size: 1.3rem;
+  display: none;
+}
+.top-header__span {
+  color: var(--color-primary);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+@media screen and (min-width: 768px) {
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .top-header__content {
+    display: flex;
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .top-header {
+    padding: 0 10rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .top-header {
+    padding: 0 4rem;
+  }
+/* ****************************************** */
