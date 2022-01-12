@@ -14,5 +14,84 @@
     />
     <link rel="stylesheet" href="fonts/font-awesome.min.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Top-header -->
+    <div class="top-header">
+      <p class="top-header__content">
+        This is an educational
+        <span class="top-header__span"> HTML CSS </span> template by TemplateMo
+        website.
+      </p>
+      <ul class="top-header__list">
+        <li class="top-header__item">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li class="top-header__item">
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="top-header__item">
+          <a href="#"><i class="fa fa-behance"></i></a>
+        </li>
+        <li class="top-header__item">
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- navbar -->
+    <div class="navbar">
+      <a href="index.html" class="logo"> Edu Meeting </a>
+      <div class="icon nav-icon" onclick="toggleMainMenu();">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="navbar__list collapsible__content">
+        <li class="navbar__items active"><a href="">home</a></li>
+        <li class="navbar__items"><a href="">meeting</a></li>
+        <li class="navbar__items"><a href="">apply now</a></li>
+        <li class="navbar__items dropdown" onclick="toggleSubmenu();">
+          <a href="javascript:void(0)">pages<i class="fa fa-angle-down"></i></a>
+
+          <ul class="navbar__submenue page-submenu">
+            <li class="navbar__submenue__items">
+              <a href="">upcoming meetings</a>
+            </li>
+            <li class="navbar__submenue__items">
+              <a href="">detail meetings</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="navbar__items"><a href="">courses</a></li>
+        <li class="navbar__items"><a href="">contact us</a></li>
+      </ul>
+    </div>
+
+    <!-- welcome-banner -->
+    <section class="welcome__banner">
+      <video autoplay muted loop>
+        <source src="images/course-video.mp4" type="video/mp4" />
+      </video>
+      <div class="welcome__video-overlay">
+        <div class="container">
+          <div class="welcome__caption">
+            <h6>Hello students</h6>
+            <h2>Welcome to education</h2>
+            <p>
+              This is an edu meeting HTML CSS template provided by
+              <a class="link" href="#">Templatemo website.</a>
+              This is a Bootstrap v5.1.3 layout. The video background is taken
+              from Pexels website, a group of young people by
+              <a class="link" href="#">Pressmaster.</a>
+            </p>
+            <button class="btn btn--accent">join us now!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

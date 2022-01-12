@@ -1,0 +1,30 @@
+<!-- navbar -->
+<div class="navbar">
+  <a href="index.html" class="logo"> Edu Meeting </a>
+  <div class="icon nav-icon" onclick="toggleMainMenu();">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="navbar__list collapsible__content">
+    <li class="navbar__items active"><a href="">home</a></li>
+    <li class="navbar__items"><a href="">meeting</a></li>
+    <li class="navbar__items"><a href="">apply now</a></li>
+    <li class="navbar__items dropdown" onclick="toggleSubmenu();">
+      <a href="javascript:void(0)">pages<i class="fa fa-angle-down"></i></a>
+
+      <ul class="navbar__submenue page-submenu">
+        <li class="navbar__submenue__items">
+          <a href="">upcoming meetings</a>
+        </li>
+        <li class="navbar__submenue__items">
+          <a href="">detail meetings</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="navbar__items"><a href="">courses</a></li>
+    <li class="navbar__items"><a href="">contact us</a></li>
+  </ul>
+</div>
