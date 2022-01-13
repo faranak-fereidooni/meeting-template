@@ -17,3 +17,38 @@ icons.forEach (icon => {
     icon.classList.toggle("open");
   });
 });
+/* slider */ 
+$(document).ready(function(){
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  responsiveClass:true,
+  margin:30,
+  responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        400:{
+          items:1,
+          nav:false
+      },
+       768:{
+           items:3,
+           nav:true
+    },
+       820:{
+           items:3,
+           nav:true
+  },
+      912:{
+          items:3,
+          nav:true
+},
+        1000:{
+            items:3,
+            nav:true,
+            loop:true
+        }
+    }
+})
+});
