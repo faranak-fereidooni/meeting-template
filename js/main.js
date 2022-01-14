@@ -17,6 +17,20 @@ icons.forEach (icon => {
     icon.classList.toggle("open");
   });
 });
+
+/* ********************************************************************** */ 
+/* click chevron-right */
+function togglecontent(){
+  const  xx=document.querySelector(".apply-now3");
+  xx.classList.toggle("collapsible--expanded");
+}
+
+function toggleSubcontent(){
+  const  xx=document.querySelector(".icon__container");
+  xx.classList.toggle("collapsible__content");
+}
+
+/* ********************************************************************** */ 
 /* slider */ 
 $(document).ready(function(){
 $('.owl-carousel').owlCarousel({
@@ -52,3 +66,12 @@ $('.owl-carousel').owlCarousel({
     }
 })
 });
+
+
+/* Collapsible */
+const collapsibles = document.querySelectorAll(".collapsible");
+collapsibles.forEach((item) =>
+  item.addEventListener("click", function () {
+    this.classList.toggle("collapsible--expanded");
+  })
+);   
