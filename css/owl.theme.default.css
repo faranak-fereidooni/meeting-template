@@ -13,8 +13,7 @@
 }
 .owl-nav .owl-prev {
   position: absolute;
-  top: -13.5rem;
-  left: -6.5rem;
+  top: -11.5rem;
 }
 .owl-nav .owl-prev span {
   display: none;
@@ -34,8 +33,7 @@
 }
 .owl-nav .owl-next {
   position: absolute;
-  top: -13.5rem;
-  right: -6.5rem;
+  top: -11.5rem;
 }
 .owl-nav .owl-next span {
   opacity: 0;
@@ -52,4 +50,58 @@
   height: 50px;
   border-radius: 50%;
   line-height: 50px;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px;
+}
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+  margin-top: 4rem;
+  color: #fff;
+}
+.owl-dots .active {
+  width: 20px;
+  height: 8px;
+  border-radius: 4px;
+}
+.owl-theme .owl-dots {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+  transition: all 0.5s;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  transition: all 0.5s;
+  margin: 0px 5px;
+}
+.owl-theme .owl-dots .owl-dot span {
+  -webkit-backface-visibility: visible;
+  background: #d6d6d6;
+  border-radius: 30px;
+  display: block;
+  height: 7px;
+  margin: 5px 6px;
+  width: 7px;
+  text-align: center;
+}
+.owl-theme .owl-dots .owl-dot.active {
+  transition: all ease 0.5s;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #fff;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  width: 24px;
+  height: 8px;
 }

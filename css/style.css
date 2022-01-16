@@ -495,7 +495,7 @@ a {
 }
 @media screen and (min-width: 1025px) {
   .logo {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 @media screen and(min-width:280px) {
@@ -512,16 +512,16 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.owl-carousel {
+.owl-carousel-service {
   align-items: center;
   margin: 0 auto;
 }
 
-.icon__item {
+.services .icon__item {
   margin: 0 auto;
   width: 6rem;
 }
-.owl-carousel__item {
+.owl-carousel-service .owl-carousel__item {
   background-image: url(../images/service-item-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -530,17 +530,17 @@ a {
   margin-top: 5rem;
   padding: 3.7rem 4rem;
 }
-.owl-carousel__content {
+.owl-carousel-service .owl-carousel__content {
   text-align: center;
 }
-.owl-carousel__content h2 {
+.owl-carousel-service .owl-carousel__content h2 {
   color: #fff;
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 2rem;
   margin-top: 2.5rem;
 }
-.owl-carousel__content p {
+.owl-carousel-service .owl-carousel__content p {
   color: #fff;
   font-size: 1.3rem;
   line-height: 2.5rem;
@@ -553,7 +553,7 @@ a {
   padding-right: 1.5rem;
 }
 @media screen and (min-width: 768px) {
-  .owl-carousel {
+  .owl-carousel-service {
     margin-top: -1rem;
   }
   .service-container {
@@ -562,31 +562,31 @@ a {
   }
 }
 @media screen and (min-width: 1024px) {
-  .owl-carousel {
-    margin-top: -21.8rem;
+  .owl-carousel-service {
+    margin-top: -17.8rem;
   }
   .service-container {
     padding-left: 8rem;
     padding-right: 8rem;
   }
-  .owl-carousel__content {
+  .owl-carousel-service .owl-carousel__content {
     max-width: 33rem;
   }
-  .owl-nav .owl-prev {
+  .owl-carousel-service .owl-nav .owl-prev {
     top: -15.5rem;
-    left: -2.5rem;
+    left: -6.5rem;
   }
-  .owl-nav .owl-next {
+  .owl-carousel-service .owl-nav .owl-next {
     top: -15.5rem;
-    right: -2.5rem;
+    right: -6.5rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .owl-nav .owl-prev {
+  .owl-carousel-service .owl-nav .owl-prev {
     top: -14.9rem;
     left: -2.5rem;
   }
-  .owl-nav .owl-next {
+  .owl-carousel-service .owl-nav .owl-next {
     top: -14.9rem;
     right: -2.5rem;
   }
@@ -888,3 +888,85 @@ a {
     margin-top: 5.3rem;
   }
 }
+/* *********************************************************** */
+/* Course section */
+.course {
+  background-attachment: fixed;
+  background-image: url(../images/meetings-page-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+}
+.course__container {
+  padding: 4rem 0;
+}
+.owl-carousel-course {
+  padding: 4rem 0;
+}
+.course .owl-carousel__item {
+  background: #fff;
+}
+.course__heading {
+  border-bottom: 1px solid #eee;
+  color: #fff;
+  font-size: 2.2rem;
+  line-height: 4rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+.course__image {
+  width: 100%;
+}
+.owl-carousel__heading {
+  border-bottom: 1px solid #eee;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  padding: 1.5rem 1.4rem 2.5rem 1.4rem;
+  text-align: center;
+}
+.owl-carousel__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1.5rem;
+  padding: 0px 3rem 1rem 0rem;
+}
+.owl-carousel__footer span {
+  color: #a12c2f;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+.fa-star {
+  color: #f5a425;
+}
+@media screen and (min-width: 1025px) {
+  .course__container {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .owl-carousel__heading {
+    padding: 1.5rem 3rem 2.5rem 3rem;
+  }
+  .owl-carousel__footer {
+    padding: 0px 5rem 1rem 2rem;
+  }
+
+  .owl-carousel-course .owl-nav .owl-prev {
+    top: -18.5rem;
+    left: -6.5rem;
+  }
+  .owl-carousel-course .owl-nav .owl-next {
+    top: -18.5rem;
+    right: -6.5rem;
+  }
+}
+@media screen and(max-width:1024px) {
+  .owl-carousel__heading {
+    font-size: 1.7rem;
+  }
+  .owl-carousel__footer {
+    padding: 0px 3rem 0rem 0rem;
+  }
+}
+/* ************************************************ */
+/*  */
