@@ -65,7 +65,7 @@ $(document).ready(function () {
       },
     },
   });
-
+/*********************************************************************/ 
   /* owl-carousel-course */
   $(".owl-carousel-course").owlCarousel({
     loop: true,
@@ -100,7 +100,7 @@ $(document).ready(function () {
     },
   });
 });
-
+/*********************************************************************/ 
 /* Collapsible */
 const collapsibles = document.querySelectorAll(".collapsible");
 collapsibles.forEach((item) =>
@@ -108,3 +108,35 @@ collapsibles.forEach((item) =>
     this.classList.toggle("collapsible--expanded");
   })
 );
+/*********************************************************************/ 
+/* Count digit */ 
+
+$(window).scroll(testScroll);
+var viewed = false;
+
+function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+function testScroll() {
+  if (isScrolledIntoView($(".facts")) && !viewed) {
+      viewed = true;
+      $('.count-digit').each(function () {
+      $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+      }, {
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(Math.ceil(now));
+          }
+      });
+    });
+  }
+}
