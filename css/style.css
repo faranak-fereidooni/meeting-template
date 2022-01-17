@@ -1082,6 +1082,7 @@ a {
   margin-left: 1rem;
   margin-right: 1rem;
   padding-top: 18rem;
+  padding-bottom: 8rem;
 }
 .form-div {
   background: #fff;
@@ -1210,3 +1211,22 @@ a {
   }
 }
 /* ******************************************************** */
+/* Footer section */
+.footer {
+  background-attachment: fixed;
+  background-image: url(../images/meetings-page-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 1px solid rgba(250, 250, 250, 0.15);
+  padding: 5rem 0;
+}
+.footer p {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
+.footer p a {
+  color: var(--color-primary);
+}
